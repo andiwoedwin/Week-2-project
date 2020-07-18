@@ -1,20 +1,13 @@
-var Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
-var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+var daysOfWeek = ["sunday", "Monday", "Tuesday", "wednesday", "Thursday", "Friday", "Saturday"];
+var male = ["Kwasi", "kwado", "kwabena", "kwaku", "Yaw", "Kofi", "Kwame"];
+var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+function day(){
+    var d = parseInt(document.getElementById("d").value);
+    var m = parseInt(document.getElementById("m").value);
+    var y = parseInt(document.getElementById("y").value);
+    var CC = parseInt(year.slice(0, 2));
+    var yy = parseInt(year.slice(2, 4));
 
-function findingDayValue(){
-    year = document.getElementById("YY").value;
-    CC = parseInt(year.substring(0,2));
-    YY = parseInt(year.substring(2,4));
-    MM = parseInt(document.getElementById("MM").value);
-    DD = parseInt(document.getElementById("DD").value);
-    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
-    console.log(d);
-    return (Math.floor(d))
-    
-    
-}
-function findingGender() {
-   var gender = document.getElementById("gender").value;
-   alert("gender") 
+    (d) = ( ( (CC/4) -2*CC-1) + ((5*y/4) ) + ((26*(m+1)/10)) + d ) %7
+    alert(d)
 }
