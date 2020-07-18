@@ -12,22 +12,25 @@
 
     <form>
       <div class="forms">
-        <label for="Day">Day.</label>
+        <label for="email">Day.</label>
         <input type="text" class="myform" id="DD">
       </div>
       <div class="forms">
-        <label for="Month">Month.</label>
+        <label for="pwd">Month.</label>
         <input type="text" class="myform" id="MM">
       </div>
       <div class="forms">
-        <label for="Year">Year.</label>
+        <label for="pwd">Year.</label>
         <input type="text" class="myform" id="YY">
 
       </div>
-      <input type="radio" id="gender" value="male"> Male<br>
-      <input type="radio" id="gender" value="female"> Female<br>
-      <button type="submit" class="click" onclick="mygender()">submit</button>
+      <select id = "sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button type="submit" class="click" onclick="day()">submit</button>
     </form>
+    <script src="js/index.js"></script>
 </body>
 </html>
 
