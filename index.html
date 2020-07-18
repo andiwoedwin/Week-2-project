@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
+    <title>Week two project</title>
 </head>
 <body>
-    
+    <h1>Akan Names</h1>
+    <p>This application is going to take user's birthday and calculate the day of the week they were born and then depending on their gender output their Akan name</p>
+    <p>Akan names are derived from Ghananian culture. Frequently in Ghana, children are given their first name as a day name which corresponds to the day in the week they were born.</p>
+
+    <form>
+      <div class="forms">
+        <label for="Day">Day.</label>
+        <input type="text" class="myform" id="DD">
+      </div>
+      <div class="forms">
+        <label for="Month">Month.</label>
+        <input type="text" class="myform" id="MM">
+      </div>
+      <div class="forms">
+        <label for="Year">Year.</label>
+        <input type="text" class="myform" id="YY">
+
+      </div>
+      <input type="radio" id="gender" value="male"> Male<br>
+      <input type="radio" id="gender" value="female"> Female<br>
+      <button type="submit" class="click" onclick="mygender()">submit</button>
+    </form>
 </body>
 </html>
 
 
 
-calculation for the day value
-function calculateDayValue(){
-    year = document.getElementById("year").value;
-    CC = parseInt(year.substring(0,2));
-    YY = parseInt(year.substring(2,4));
-    MM = parseInt(document.getElementById("month").value);
-    DD = parseInt(document.getElementById("date").value);
-    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
-    console.log(d);
-    return (Math.floor(d));
-  }
+
+  
+  
