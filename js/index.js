@@ -11,7 +11,10 @@ function findingDayValue(){
     d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
     console.log(d);
     return (Math.floor(d))
-    alert("d")
+    
     
 }
-function ()
+function findingGender() {
+   var gender = document.getElementById("gender").value;
+   alert("gender") 
+}
