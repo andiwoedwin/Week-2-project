@@ -24,43 +24,43 @@ function getDay(){
        var aprJune =  ( ((month===4)&&(day==31)) || ((month===6)&&(day==31)) );
        var septOct =  ( ((month===9)&&(day==31)) || ((month===11)&&(day==31)) );
        if ( invalidAll==true ) {
-        document.getElementById('result').textContent = "*ENTER DETAILS!";
+        document.getElementById('result').textContent = "*Enter details";
         document.getElementById("result").style.color = "red";
         document.getElementById("resultintro").style.display = "none";
        }
       else if( invalidDay==true) {
-        document.getElementById("result").textContent = "*Please enter a Valid Day Number from 1 - 31";
+        document.getElementById("result").textContent = "*Ooops try again";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
       }
       else if ( invalidMonth==true ) {
-        document.getElementById('result').textContent = "*Please enter a Valid Month Number from 1 - 12";
+        document.getElementById('result').textContent = "*Not a valid month";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
        }
       else if ( invalidYear==true ) {
-        document.getElementById('result').textContent = "*INVALID YEAR";
+        document.getElementById('result').textContent = "*Enter valid year";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
        }
       else if ( invalidGender==true ) {
-        document.getElementById('result').textContent = "*SELECT GENDER";
+        document.getElementById('result').textContent = "*Select your gender";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
         }
       else if ( (febDates==true) || (aprJune==true) ||(septOct==true) ) {
-        document.getElementById('result').textContent = "*SELECT AN EXISTING DATE.";
+        document.getElementById('result').textContent = "*Be serious.";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
         }
       else if ( validFemale==true ) {
-        document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +femaleAkanName[actualBirthDay];
-        document.getElementById("result").style.color = "green";
+        document.getElementById('result').textContent = "You birthday was on "+ akanDay+ " and your Akan name is " +femaleAkanName[actualBirthDay];
+        document.getElementById("result").style.color = "grey";
         document.getElementById("results").style.display = "none";
        }
       else if ( validMale==true) {
         document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +maleAkanName[actualBirthDay];
-        document.getElementById("result").style.color = "green";
+        document.getElementById("result").style.color = "grey";
         document.getElementById("results").style.display = "none";
        }
       else {
