@@ -1,0 +1,16 @@
+.main{
+    background-image: url("../images/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.main >h1{
+    color: orange;
+    text-align: center;
+}
+
+.main>p{
+    text-align: center;
+    color: beige;
+}
