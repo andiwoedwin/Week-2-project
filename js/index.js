@@ -15,7 +15,7 @@ function getDay(){
        var akanDay = dayOfWeek[actualBirthDay];
        var invalidMonth = ( month<1 || month>12 || ((document.getElementById("mm").value)=="") );
        var invalidDay = ( day<1 || day>31 || ((document.getElementById("dd").value)=="") );
-       var invalidYear = (  year<1 || ( year>( new Date().getFullYear() ) ) || ((document.getElementById("yy").value)=="") );
+       var invalidYear = (  year<1900 || (year>( new Date().getFullYear() ) ) || ((document.getElementById("yy").value)=="") );
        var invalidGender = ( (gender=="selectdefault") );
        var invalidAll = ((invalidDay==true)&&(invalidMonth==true)&&(invalidYear==true)&&(invalidGender==true));
        var validFemale = ((invalidDay==false)&&(invalidMonth==false)&&(invalidYear==false)&&(gender==="Female"));
@@ -39,7 +39,7 @@ function getDay(){
         document.getElementById("results").style.display = "none";
        }
       else if ( invalidYear==true ) {
-        document.getElementById('result').textContent = "*Enter valid year";
+        document.getElementById('result').textContent = "*You are too old for this App";
         document.getElementById("result").style.color = "red";
         document.getElementById("results").style.display = "none";
        }
